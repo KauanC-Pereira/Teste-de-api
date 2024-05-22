@@ -1,5 +1,7 @@
-[
+{
+   "posts": [
    {
+      "id": 1,
       "cd_ativ_econ_primaria":"G-4789-0/99",
       "razao_social":"ROTULO COMERCIO DE SUPRIMENTOS PARA EMBALAGENS LTDA",
       "cd_optante_simples":"OPTANTE",
@@ -17,6 +19,7 @@
       },
       "setor_amigavel":[
          {
+            "id" : 2,
             "setor_amigavel":"Comércio Varejista"
          }
       ],
@@ -40,6 +43,7 @@
       "tp_situacao":"ATIVA",
       "ds_quadro_societario":[
          {
+            "id" : 3,
             "cd_qualif_qsa":"49-Sócio-Administrador",
             "dt_entrada_sociedade":"2022-08-19T00:00:00",
             "ds_nome_qsa":"ALINE MARQUES ALVES",
@@ -65,15 +69,18 @@
       "is_opcao_mei":false,
       "ds_ativ_econ_secundaria":[
          {
+            "id" : 4,
             "ds_cnae":"Representantes comerciais e agentes do comércio de mercadorias em geral não especializado",
             "cd_cnae":"G-4619-2/00"
          },
          {
+            "id" : 5,
             "ds_cnae":"Comércio varejista especializado de equipamentos e suprimentos de informática",
             "cd_cnae":"G-4751-2/01"
          }
       ],
       "dados_matriz":{
+         "id" : 6,
          "cd_cnpj":"28.652.912/0001-67"
       },
       "dividas":{
@@ -120,3 +127,4 @@
       "tecnologias":0
    }
 ]
+}
