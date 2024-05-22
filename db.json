@@ -16,7 +16,6 @@
          "vlr_faturamento":1500000,
          "porte":"PEQUENO"
       },
-      "posts 2" : [
       "setor_amigavel":[
          {
             "setor_amigavel":"Comércio Varejista"
@@ -31,7 +30,7 @@
       "ds_dominio":{
          "totalSites":0,
          "ds_dominio":""
-      }],
+      },
       "score_scaled":0,
       "nm_fantasia":"None",
       "titulo":"ROTULO COMERCIO DE SUPRIMENTOS PARA EMBALAGENS LTDA",
