@@ -1,124 +1,21 @@
-{
-   "profile": [
-   {
-      "cd_ativ_econ_primaria":"G-4789-0/99",
-      "razao_social":"ROTULO COMERCIO DE SUPRIMENTOS PARA EMBALAGENS LTDA",
-      "cd_optante_simples":"OPTANTE",
-      "cd_cnpj":"28.652.912/0001-67",
-      "nm_ativ_econ_primaria":"Comércio varejista de outros produtos não especificados anteriormente",
-      "dt_situacao":"2017-09-13T00:00:00Z",
-      "ds_motivo_situacao":"None",
-      "grupo_economico":{
-         "qtd_exibicao_funcionarios_ate":19,
-         "vlr_exibicao_faturamento_de":360001,
-         "vlr_exibicao_faturamento_ate":1800000,
-         "qtd_exibicao_funcionarios_de":10,
-         "vlr_faturamento":1500000,
-         "porte":"PEQUENO"
-      },
-      "setor_amigavel":[
-         {
-            "setor_amigavel":"Comércio Varejista"
-         }
-      ],
-      "score_nivel_atividade_classificacao":"media",
-      "tp_situacao_especial":"None",
-      "dt_opcao_simples":"2017-09-13T00:00:00Z",
-      "bairro":"OLARIA",
-      "logradouro":"RUA FIRMINO GAMELEIRA",
-      "logo":"None",
-      "ds_dominio":{
-         "totalSites":0,
-         "ds_dominio":""
-      },
-      "score_scaled":0,
-      "nm_fantasia":"None",
-      "titulo":"ROTULO COMERCIO DE SUPRIMENTOS PARA EMBALAGENS LTDA",
-      "cidade":"RIO DE JANEIRO",
-      "numero":"786",
-      "vlr_capital_social":100000,
-      "faturamento_ate_micro":"None",
-      "tp_situacao":"ATIVA",
-      "ds_quadro_societario":[
-         {
-            "cd_qualif_qsa":"49-Sócio-Administrador",
-            "dt_entrada_sociedade":"2022-08-19T00:00:00",
-            "ds_nome_qsa":"ALINE MARQUES ALVES",
-            "ds_email_qsa":"*****.*******@*****.***",
-            "cd_cpf_socio":"***.***.***-**"
-         },
-         {
-            "cd_qualif_qsa":"22-Sócio",
-            "dt_entrada_sociedade":"2017-09-13T00:00:00",
-            "ds_nome_qsa":"MONIQUE CUNHA DE OLIVEIRA",
-            "ds_email_qsa":"*******.*****@*****.***",
-            "cd_cpf_socio":"***.***.***-**"
-         }
-      ],
-      "redesSociaisInfo":[
-         
-      ],
-      "cd_natureza_juridica":"206-2",
-      "cep":"21.021-450",
-      "complemento":"FDS GLP",
-      "nm_natureza_juridica":"Sociedade Empresária Limitada",
-      "tp_unidade":"MATRIZ",
-      "is_opcao_mei":false,
-      "ds_ativ_econ_secundaria":[
-         {
-            "ds_cnae":"Representantes comerciais e agentes do comércio de mercadorias em geral não especializado",
-            "cd_cnae":"G-4619-2/00"
-         },
-         {
-            "ds_cnae":"Comércio varejista especializado de equipamentos e suprimentos de informática",
-            "cd_cnae":"G-4751-2/01"
-         }
-      ],
-      "dados_matriz":{
-         "cd_cnpj":"28.652.912/0001-67"
-      },
-      "dividas":{
-         "dividas_uniao":"None"
-      },
-      "uf":"RJ",
-      "dt_abertura":"2017-09-13T00:00:00Z",
-      "porte":"PEQUENO",
-      "ds_telefone":{
-         "totalPhones":0,
-         "ds_telefone":""
-      },
-      "tp_enquadramento_porte":[
-         "EPP"
-      ],
-      "faturamento_de_micro":"None",
-      "pessoas":[
-         {
-            "id_pessoa":"982ac3a70a429474be8104f0f2bbdf2e",
-            "socio":true,
-            "nome":"ALINE MARQUES ALVES",
-            "cargos":"None"
-         },
-         {
-            "id_pessoa":"056ad625c4f6a13e3f093e37d457b580",
-            "socio":true,
-            "nome":"MONIQUE CUNHA DE OLIVEIRA",
-            "cargos":"None"
-         }
-      ],
-      "visible":true,
-      "saldo":{
-         "count":10,
-         "renovacaoSaldo":"2024-05-01T00:00:00.000Z",
-         "renovacaoCnpj":"",
-         "maxSaldoDesbloqueio":10,
-         "cnpjDesbloqueado":false
-      },
-      "saldoEver":[
-         {
-            "count":"7"
-         }
-      ],
-      "tecnologias":0
-   }
-]
-}
+const cnpj = '73909566000104';
+
+const url = `https://www.econodata.com.br/consulta-empresa/api/ecdt-busca/searchCompaniesDetailsSite?cnpj=${cnpj}`;
+
+// Realiza a requisição GET
+fetch(url)
+  .then(response => {
+    // Verifica se a requisição foi bem sucedida
+    if (!response.ok) {
+      throw new Error('Erro ao fazer a requisição');
+    }
+    // A resposta da API está em formato JSON, então podemos acessar os dados assim:
+    return response.json();
+  })
+  .then(data => {
+    // Manipula os dados retornados
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Erro:', error);
+  });
