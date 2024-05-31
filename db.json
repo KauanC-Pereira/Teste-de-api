@@ -1,5 +1,5 @@
 {
-   "posts": [
+   "profile": [
    {
       "cd_ativ_econ_primaria":"G-4789-0/99",
       "razao_social":"ROTULO COMERCIO DE SUPRIMENTOS PARA EMBALAGENS LTDA",
@@ -16,6 +16,7 @@
          "vlr_faturamento":1500000,
          "porte":"PEQUENO"
       },
+      ]
       "setor_amigavel":[
          {
             "setor_amigavel":"Comércio Varejista"
