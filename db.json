@@ -1,21 +1,19 @@
-const cnpj = '73909566000104';
-
-const url = `https://www.econodata.com.br/consulta-empresa/api/ecdt-busca/searchCompaniesDetailsSite?cnpj=${cnpj}`;
-
-// Realiza a requisição GET
-fetch(url)
-  .then(response => {
-    // Verifica se a requisição foi bem sucedida
-    if (!response.ok) {
-      throw new Error('Erro ao fazer a requisição');
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    },
+    {
+      "id": 2,
+      "title": "wtf"
+    },
+    {
+      "id":3,
+      "title": "Preciso entender como isso funciona"
     }
-    // A resposta da API está em formato JSON, então podemos acessar os dados assim:
-    return response.json();
-  })
-  .then(data => {
-    // Manipula os dados retornados
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Erro:', error);
-  });
+  ],
+  "profile": {
+    "name": "Uma especie de edição, não tem jeito"
+  }
+}
